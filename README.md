@@ -24,6 +24,18 @@ volumes:
   factomdata:
 ```
 
+If you're on Mac you may need to add a localhost entry under the `factom-sandbox` service:
+
+```yml
+extra_hosts:
+  - localhost:172.17.0.1
+```
+
 Then use `docker-compose up` to start factomd and factom-walletd.
 
-You can also access the CLI by running `docker-compose run factom-sandbox factom-cli`.
+You can also access the CLI by running:
+
+```bash
+$ docker-compose run factom-sandbox bash
+root@0cba5194ec5f:/# factom-cli help
+```
