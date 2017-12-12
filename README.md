@@ -24,7 +24,7 @@ volumes:
   factomdata:
 ```
 
-If you're on Mac you may need to add a localhost entry under the `factom-sandbox` service:
+If you're on Docker for Mac or another VM you may need to add a localhost entry under the `factom-sandbox` service for whatever your local gateway IP is. For Mac this is:
 
 ```yml
 extra_hosts:
