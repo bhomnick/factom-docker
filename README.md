@@ -35,7 +35,7 @@ Then use `docker-compose up` to start factomd and factom-walletd.
 
 You can also access the CLI by running:
 
-```bash
+```
 $ docker-compose run factom-sandbox bash
 root@0cba5194ec5f:/# factom-cli help
 ```
